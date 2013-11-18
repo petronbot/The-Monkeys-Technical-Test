@@ -41,6 +41,38 @@
             }
         </style>
 
+        <script>
+
+            function changeSelect()
+            {
+                var enquirySelectValue = document.getElementById("enquiryType").options[this.selectedIndex].value;
+                var conditionalInput = document.getElementById("productDetails").getElementsByTagName("input");
+
+                if (enquirySelectValue == "productComplaint") {
+                    for (i = 0;i < conditionalInput.length; ++i) {
+                        conditionalInput[i].setAttribute("required","required");
+                        conditionalInput[i].previousElementSibling.textContent += " *";
+                    }
+                } else {
+                    for (i = 0;i < conditionalInput.length; ++i) {
+                        if ( conditionalInput[i].hasAttribute('required') ) {
+                            conditionalInput[i].removeAttribute("required","required");
+                            var newContent = conditionalInput[i].previousElementSibling.textContent;
+                            var contentShortened = newContent.substr(0, newContent.length-2); 
+                            conditionalInput[i].previousElementSibling.textContent = contentShortened;
+                        }
+                    }
+                }
+            }
+
+            window.onload = function()
+            {
+                document.getElementById("enquiryType").addEventListener ( 'change' , changeSelect );
+            }
+
+        </script>
+
+
     </head>
     <body>
 
