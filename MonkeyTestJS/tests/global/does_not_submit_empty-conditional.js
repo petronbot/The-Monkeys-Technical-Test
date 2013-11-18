@@ -6,7 +6,7 @@ registerTest ('Form will not validate if any conditional required fields are emp
     load : function() {
 
         this
-        .test('Are empty conditional fields invalid on submit?',function($) {
+        .test('Are empty conditional fields invalid?',function($) {
             if (this.querySelect == "productComplaint") {
                 var testCounter = 0;
                 for (var i = 0; i < this.inputFields.length; i++ ) {
