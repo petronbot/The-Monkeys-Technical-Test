@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Petra Gulicher -- Front End Developer -- @PGulicher
+
+# THANKS
+
+    To all those who have gone before.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    JavaScript, html5shiv
+    QUnit
+
+ # ABOUT
+
+ 		This page was prepared as part of a Technical test issued by The Monkeys.
+

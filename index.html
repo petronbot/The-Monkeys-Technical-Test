@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Technical Test - Petra Gulicher</title>
+        <meta name="description" content="A simple form to demonstrate technical capability.">
+        <link type="text/plain" rel="author" href="humans.txt" />
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <form id="form">
+
+            <fieldset>
+
+                <p>All fields marked with an asterisk (*) are required.</p>
+
+                <label for="firstName">First name *</label>
+                <input type="text" name="firstName" id="firstName" required>
+
+                <label for="surname">Surname *</label>
+                <input type="text" name="surname" id="surname" required>
+
+                <label for="emailAddress">Email address *</label>
+                <input type="email" name="emailAdress" id="emailAddress" required>
+
+                <label for="daytimeContact">Daytime contact number *</label>
+                <input type="tel" name="daytimeContact" id="daytimeContact" required>
+
+                <label for="address">Address *</label>
+                <input type="text" name="address" id="address" required>
+
+                <label for="suburb">Suburb *</label>
+                <input type="text" name="suburb" id="suburb" required>
+
+                <label for="state">State *</label>
+                <select name="state" id="state" required>
+                    <option value="" disabled="disabled">Please select a state</option>
+                    <option value="ACT">ACT</option>
+                    <option value="NSW">NSW</option>
+                    <option value="NT">NT</option>
+                    <option value="QLD">QLD</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="VIC">VIC</option>
+                    <option value="WA">WA</option>
+                </select>
+
+                <label for="postcode">Postcode *</label>
+                <input type="text" name="postcode" id="postcode" required>
+
+                <label for="enquiryType">Enquiry type *</label>
+
+                <select name="enquiryType" id="enquiryType" required>
+                    <option value="" disabled="disabled">Please select an enquiry type</option>
+                    <option value="generalEnquiry">General enquiry</option>
+                    <option value="productFeedback">Product feedback or enquiry</option>
+                    <option value="productComplaint">Product complaint</option>
+                </select>
+
+                <fieldset id="productDetails">
+
+                    <legend>Product details</legend>
+
+                    <label for="productName">Product name</label>
+                    <input type="text" name="productName" id="productName">
+
+                    <label for="productSize">Product size</label>
+                    <input type="text" name="productSize" id="productSize">
+
+                    <label for="useByDate">Use-by date</label>
+                    <input type="text" name="useByDate" id="useByDate">
+
+                    <label for="batchCode">Batch code</label>
+                    <input type="text" name="batchCode" id="batchCode">
+
+                </fieldset>
+
+                <label for="enquiry">Enquiry</label>
+                <textarea name="enquiry" id="enquiry"></textarea>
+
+                <input type="submit" value="Submit" id="submit">
+
+            </fieldset>
+
+
+        </form>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
