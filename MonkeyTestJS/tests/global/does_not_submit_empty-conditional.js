@@ -18,7 +18,7 @@ registerTest ('Form will not validate if any conditional required fields are emp
                     }
                 }
             }
-            equal(testCounter,0,'None of the required fields are valid if empty');
+            notEqual(testCounter,0,'None of the required fields are valid if empty');
         });
     }
 });

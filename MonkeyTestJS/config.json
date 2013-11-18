@@ -18,6 +18,7 @@
     },
 
     "globalTests": [
+        "global/is_html_w3c_valid.js",
         "global/does_not_submit_empty.js",
         "global/does_not_submit_empty-conditional.js"
     ],
